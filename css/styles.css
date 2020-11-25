@@ -43,7 +43,7 @@ h3{
 
 #info-cont{
     margin-top: 40px;
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 .form-control{
@@ -62,8 +62,13 @@ h3{
 }
 
 .img{
+    display: block;
     position: absolute;
     margin-left: 55%;
+}
+
+#img{
+    width: 500px;
 }
 
 .content{
@@ -112,4 +117,116 @@ hr{
 .modal-header .close {
     padding: 1rem 1rem;
     margin: 1rem 1rem -1rem auto;
+}
+
+#back-home{
+    width: 100px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 575px){
+    #staticBackdropLabel{
+        font-size: 30px;
+        font-family: monospace;
+    }
+
+    .modal-header .close {
+        padding: 1rem 1rem;
+        margin: 1rem -1rem -1rem auto;
+    }
+
+    #back-home{
+        display: none;
+    }
+
+    button.close{
+        background-color: white;
+        border-radius: 50px;
+        opacity: 10;
+        line-height: 0.8;
+    }
+
+    .content{
+        max-width: 100%;
+    }
+
+    .btn{
+        margin-top: 10px;
+    }
+
+    #form{
+        max-width: 100%;
+        border: 1px solid white;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    #head-col-2{
+        /* background-color: rgb(14, 14, 61); */
+        background-image: linear-gradient(125deg, rgb(4, 106, 165), rgb(14, 14, 61));
+        color: white;
+        border-radius: 20px 20px 20px 20px;
+        padding: 10px;
+    }
+
+    #info-cont{
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+
+    .img{
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 770px){
+    #info-cont{
+        margin-left: 0px;
+    }
+
+    .img{
+        position: absolute;
+        margin-left: 0%;
+    }
+
+    #img{
+        width: 400px;
+    }
+
+    #back-home{
+        transform: rotate(90deg);
+    }
+}
+
+
+
+@media (max-width: 1024px){
+    .img{
+        position: absolute;
+        margin-left: 52%;
+    }
+
+    #img{
+        width: 400px;
+    }
+
+    #info-cont{
+        margin-left: 0px;
+    }
+}
+
+
+
+@media (max-width: 1200px){
+    .img{
+        margin-left: 52%;
+    }
+
+    #info-cont{
+        margin-left: 0px;
+    }
 }
