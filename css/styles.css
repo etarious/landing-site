@@ -108,3 +108,12 @@ hr{
     font-size: 50px;
     font-family: monospace;
 }
+
+#back-home{
+    margin-left: 35%;
+}
+
+.modal-header .close {
+    padding: 1rem 1rem;
+    margin: 1rem 1rem -1rem auto;
+}
